@@ -149,8 +149,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service
 
 # Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+# PRODUCT_PACKAGES += \
+#    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
