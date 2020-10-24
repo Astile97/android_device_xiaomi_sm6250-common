@@ -35,7 +35,7 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Audio policy
-USE_CUSTOM_AUDIO_POLICY := 1
+# USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -81,7 +81,7 @@ BOARD_BOOT_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
-KERNEL_LD := LD=ld.lld
+# KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := cust_defconfig
@@ -182,7 +182,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2020-07-01
 
 # Sepolicy
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
