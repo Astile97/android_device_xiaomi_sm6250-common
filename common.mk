@@ -457,3 +457,7 @@ PRODUCT_PACKAGES += \
     XiaomiParts \
     init.xiaomiparts.rc \
     init.xiaomiparts.sh
+
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := atoll
