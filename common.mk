@@ -459,6 +459,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := atoll
 
+# Signapk
+PRODUCT_HOST_PACKAGES += \
+    signapk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
